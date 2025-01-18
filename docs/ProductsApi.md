@@ -1,4 +1,4 @@
-# swagger_client.ProductsApi
+# billabear.ProductsApi
 
 All URIs are relative to *https://{customerId}.billabear.cloud/api/v1*
 
@@ -20,19 +20,19 @@ Create a product
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billabear
+from billabear.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = billabear.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ProductsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.Product() # Product | 
+api_instance = billabear.ProductsApi(billabear.ApiClient(configuration))
+body = billabear.Product() # Product | 
 
 try:
     # Create
@@ -73,18 +73,18 @@ List all products
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billabear
+from billabear.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = billabear.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ProductsApi(swagger_client.ApiClient(configuration))
+api_instance = billabear.ProductsApi(billabear.ApiClient(configuration))
 limit = 56 # int | How many items to return at one time (max 100) (optional)
 last_key = 'last_key_example' # str | The key to be used in pagination to say what the last key of the previous page was (optional)
 name = 'name_example' # str | The name to search for (optional)
@@ -131,18 +131,18 @@ Info for a specific product
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billabear
+from billabear.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = billabear.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ProductsApi(swagger_client.ApiClient(configuration))
+api_instance = billabear.ProductsApi(billabear.ApiClient(configuration))
 product_id = 'product_id_example' # str | The id of the product to retrieve
 
 try:
@@ -185,18 +185,18 @@ Update a product
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billabear
+from billabear.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = billabear.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.ProductsApi(swagger_client.ApiClient(configuration))
+api_instance = billabear.ProductsApi(billabear.ApiClient(configuration))
 product_id = 'product_id_example' # str | The id of the product to retrieve
 
 try:

@@ -1,4 +1,4 @@
-# swagger_client.SubscriptionsApi
+# billabear.SubscriptionsApi
 
 All URIs are relative to *https://{customerId}.billabear.cloud/api/v1*
 
@@ -29,19 +29,19 @@ Adds seats to a per seat subscription<br><br><strong>Since 1.1.4</strong>
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billabear
+from billabear.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = billabear.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.SeatsAddBody() # SeatsAddBody | 
+api_instance = billabear.SubscriptionsApi(billabear.ApiClient(configuration))
+body = billabear.SeatsAddBody() # SeatsAddBody | 
 subscription_id = 'subscription_id_example' # str | The id of the subscription to retrieve
 
 try:
@@ -85,19 +85,19 @@ Info for a specific subscription
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billabear
+from billabear.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = billabear.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.SubscriptionIdCancelBody() # SubscriptionIdCancelBody | 
+api_instance = billabear.SubscriptionsApi(billabear.ApiClient(configuration))
+body = billabear.SubscriptionIdCancelBody() # SubscriptionIdCancelBody | 
 subscription_id = 'subscription_id_example' # str | The id of the subscription to retrieve
 
 try:
@@ -140,19 +140,19 @@ Changes the price being used for a price. Useful for changing pricing schedule o
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billabear
+from billabear.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = billabear.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.SubscriptionIdPriceBody() # SubscriptionIdPriceBody | 
+api_instance = billabear.SubscriptionsApi(billabear.ApiClient(configuration))
+body = billabear.SubscriptionIdPriceBody() # SubscriptionIdPriceBody | 
 subscription_id = 'subscription_id_example' # str | The id of the subscription to retrieve
 
 try:
@@ -196,19 +196,19 @@ Create subscription for a customer
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billabear
+from billabear.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = billabear.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.SubscriptionStartBody() # SubscriptionStartBody | 
+api_instance = billabear.SubscriptionsApi(billabear.ApiClient(configuration))
+body = billabear.SubscriptionStartBody() # SubscriptionStartBody | 
 customer_id = 'customer_id_example' # str | The id of the customer to retrieve
 
 try:
@@ -252,19 +252,19 @@ Change the subscription plan for a customer
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billabear
+from billabear.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = billabear.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.SubscriptionIdPlanBody() # SubscriptionIdPlanBody | 
+api_instance = billabear.SubscriptionsApi(billabear.ApiClient(configuration))
+body = billabear.SubscriptionIdPlanBody() # SubscriptionIdPlanBody | 
 subscription_id = 'subscription_id_example' # str | The id of the subscription to retrieve
 
 try:
@@ -308,19 +308,19 @@ Extend a trial subscription so it's converted from a trial to a normal subscript
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billabear
+from billabear.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = billabear.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.SubscriptionIdExtendBody() # SubscriptionIdExtendBody | 
+api_instance = billabear.SubscriptionsApi(billabear.ApiClient(configuration))
+body = billabear.SubscriptionIdExtendBody() # SubscriptionIdExtendBody | 
 subscription_id = 'subscription_id_example' # str | The id of the subscription to retrieve
 
 try:
@@ -364,18 +364,18 @@ List all Active customer subscriptions
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billabear
+from billabear.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = billabear.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi(swagger_client.ApiClient(configuration))
+api_instance = billabear.SubscriptionsApi(billabear.ApiClient(configuration))
 customer_id = 'customer_id_example' # str | The id of the customer to retrieve
 
 try:
@@ -418,18 +418,18 @@ List all customer subscriptions<br><br><strong>Since 1.1</strong>
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billabear
+from billabear.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = billabear.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi(swagger_client.ApiClient(configuration))
+api_instance = billabear.SubscriptionsApi(billabear.ApiClient(configuration))
 customer_id = 'customer_id_example' # str | The id of the customer to retrieve
 
 try:
@@ -472,18 +472,18 @@ List all subscriptions plans
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billabear
+from billabear.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = billabear.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi(swagger_client.ApiClient(configuration))
+api_instance = billabear.SubscriptionsApi(billabear.ApiClient(configuration))
 limit = 56 # int | How many items to return at one time (max 100) (optional)
 last_key = 'last_key_example' # str | The key to be used in pagination to say what the last key of the previous page was (optional)
 
@@ -528,18 +528,18 @@ List all subscriptions
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billabear
+from billabear.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = billabear.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi(swagger_client.ApiClient(configuration))
+api_instance = billabear.SubscriptionsApi(billabear.ApiClient(configuration))
 limit = 56 # int | How many items to return at one time (max 100) (optional)
 last_key = 'last_key_example' # str | The key to be used in pagination to say what the last key of the previous page was (optional)
 
@@ -584,19 +584,19 @@ Remove seats to a per seat subscription<br><br><strong>Since 1.1.4</strong>
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billabear
+from billabear.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = billabear.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.SeatsRemoveBody() # SeatsRemoveBody | 
+api_instance = billabear.SubscriptionsApi(billabear.ApiClient(configuration))
+body = billabear.SeatsRemoveBody() # SeatsRemoveBody | 
 subscription_id = 'subscription_id_example' # str | The id of the subscription to retrieve
 
 try:
@@ -640,18 +640,18 @@ Info for a specific subscription
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billabear
+from billabear.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = billabear.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi(swagger_client.ApiClient(configuration))
+api_instance = billabear.SubscriptionsApi(billabear.ApiClient(configuration))
 subscription_id = 'subscription_id_example' # str | The id of the subscription to retrieve
 
 try:
@@ -694,19 +694,19 @@ Start subscription for a customer
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billabear
+from billabear.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = billabear.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi(swagger_client.ApiClient(configuration))
-body = swagger_client.SubscriptionTrialBody() # SubscriptionTrialBody | 
+api_instance = billabear.SubscriptionsApi(billabear.ApiClient(configuration))
+body = billabear.SubscriptionTrialBody() # SubscriptionTrialBody | 
 customer_id = 'customer_id_example' # str | The id of the customer to retrieve
 
 try:

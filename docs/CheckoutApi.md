@@ -1,4 +1,4 @@
-# swagger_client.CheckoutApi
+# billabear.CheckoutApi
 
 All URIs are relative to *https://{customerId}.billabear.cloud/api/v1*
 
@@ -17,19 +17,19 @@ Create checkout<br><br><strong>Since 2024.01</strong>
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billabear
+from billabear.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = swagger_client.Configuration()
+configuration = billabear.Configuration()
 configuration.api_key['X-API-Key'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-API-Key'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = swagger_client.CheckoutApi(swagger_client.ApiClient(configuration))
-body = swagger_client.CheckoutBody() # CheckoutBody | 
+api_instance = billabear.CheckoutApi(billabear.ApiClient(configuration))
+body = billabear.CheckoutBody() # CheckoutBody | 
 
 try:
     # Create Checkout
